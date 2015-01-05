@@ -6,7 +6,4 @@
 #
 # All right, reserved!
 #
-include_recipe "nginx::add_repo"
-include_recipe "nginx::install"
-include_recipe "nginx::config"
-include_recipe "nginx::service"
+include_recipe "nginx-cookbooks::add_repo"
