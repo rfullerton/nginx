@@ -6,6 +6,6 @@ end
 execute "apt-get update " do
   user "root"
 end
-execute "apt-get install nginx" do
+execute "apt-get install nginx -y" do
   user "root"
 end
