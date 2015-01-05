@@ -1,11 +1,10 @@
 Chef::Log.info("NGINX: Adding mainline Repo")
-
-execute "add-apt-repository ppa:nginx/stable" do
-  user "root"
+execute "add-apt-repository ppa:nginx/development" do
+user "root"
 end
 execute "apt-get update " do
-  user "root"
+user "root"
 end
 execute "apt-get install nginx -y" do
-  user "root"
+user "root"
 end
